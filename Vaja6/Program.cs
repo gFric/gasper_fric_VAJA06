@@ -8,12 +8,14 @@ namespace vaja6 {
   public int x = 666;
 
 	// Se en komentar
+	//Naredimo razred igralec, ki vsebuje podatke o igralcu
     class Igralec {
         public int id;
         public string u_ime;
         public string u_geslo;
         public static int stIg = 1;
 
+		//privzeti konstruktor, ki nastavi osnovne podatke igralca
         public Igralec() {
             u_ime = "";
             u_geslo = "";
@@ -21,6 +23,7 @@ namespace vaja6 {
             stIg++;
         }
 
+		//Naredimo lastnosti, ki vrne Id igralca
         public int Id {
             get
             {
@@ -28,6 +31,7 @@ namespace vaja6 {
             }
         }
 
+		//Lastnost U_ime, ki ji nastavimo vrednost na u_ime in jo trim-amo
         public string U_ime {
             get
             {
@@ -38,7 +42,8 @@ namespace vaja6 {
                 u_ime = value.Trim();
             }
         }
-
+		
+		//Naredi isto kot prejšnja lastnost ampak za u_geslo
         public string U_geslo
         {
             get
@@ -51,11 +56,13 @@ namespace vaja6 {
             }
         }
 
+		//Statična lastnost, ki vrne število igralcev - stIg
         public static int StIg
         {
             get { return stIg; }
         }
     }
+	
     class vaja { 
         public static void main(String[] args)
         {
