@@ -10,10 +10,10 @@ namespace vaja6 {
 	// Se en komentar
 	//Naredimo razred igralec, ki vsebuje podatke o igralcu
     class Igralec {
-        public int id;
-        public string u_ime;
-        public string u_geslo;
-        public static int stIg = 1;
+        private int id;
+        private string u_ime;
+        private string u_geslo;
+        private static int stIg = 1;
 
 		//privzeti konstruktor, ki nastavi osnovne podatke igralca
         public Igralec() {
