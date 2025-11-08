@@ -23,6 +23,21 @@ namespace vaja6 {
             stIg++;
         }
 
+		public Igralec (string u_ime, string u_geslo, int id, int stIg1)
+		{
+			this.u_ime = u_ime;
+    		this.u_geslo = u_geslo;
+    		this.id = id;
+    		stIg = stIg1;
+		}
+
+		public Igralec(Igralec Igralec2)
+		{
+    		u_ime = Igralec2.u_ime;
+    		u_geslo = Igralec2.u_geslo;
+    		id = Igralec2.id;
+		}
+
 		//Naredimo lastnosti, ki vrne Id igralca
         public int Id {
             get
